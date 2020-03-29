@@ -1,3 +1,3 @@
-# smash-the-curve
+# Smash the Curve
 
 ## Let's play!
