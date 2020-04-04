@@ -1,4 +1,4 @@
-const board = {
+const state = {
   cities: {
     atlanta: {
       displayName: "Atlanta",
@@ -625,6 +625,52 @@ const board = {
       meeples: [],
     }, 
   },
-  infectionRate: [2, 2, 2, 3, 3, 4, 4],
-  outbreak: 0
+  activePlayers: [],
+  currentPlayer: "player1",
+  player1: {
+    role: "",
+    hand: [],
+    isHandExpanded: false,
+    location: "atlanta",
+    isActive: false,
+  },
+  player2: {
+    role: "",
+    hand: [],
+    isHandExpanded: false,
+    location: "atlanta",
+    isActive: false,
+  },
+  player3: {
+    role: "",
+    hand: [],
+    isHandExpanded: false,
+    location: "atlanta",
+    isActive: false,
+  },
+  player4: {
+    role: "",
+    hand: [],
+    isHandExpanded: false,
+    location: "atlanta",
+    isActive: false,
+  },
+  infectionRate: 2,
+  outbreak: 0,
+  cubesRemaining: {
+    yellow: 24,
+    red: 24,
+    blue: 24,
+    black: 24,
+  },
+  diseaseStatus:{
+    yellow: "infectious",
+    red: "infectious",
+    blue: "infectious",
+    black: "infectious",
+  },
+  infectionCardDeck:[],
+  infectionCardDiscard: [],
+  playerCardDeck: [],
+  playerCardDiscard: [],
 }
